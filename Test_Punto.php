@@ -1,6 +1,6 @@
 <?php
 include 'Punto.php';
-$p = new Punto(5,7);  // se crea un objeto punto y se asigna a la variable p
+$p = new Punto(5,7);  // se crea un objeto punto y se asigna a la variable p.
 echo $p->getCoordenada_x();       // se visualiza el valor contenido en la variable instancia x
 echo $p->getCoordenada_y();       // se visualiza el valor contenido en la variable instancia y
 

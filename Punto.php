@@ -1,6 +1,6 @@
 <?php
 class Punto{
-	// Representación de un punto en el plano
+	// Representación de un punto en el plano.
 	// los atributos son: $coordenada_x e $coordenada_y que representan los valores de las coordenadas cartesianas.
 	private  $coordenada_x ;
 	
