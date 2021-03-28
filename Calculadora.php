@@ -4,7 +4,6 @@
          * Representacion de la clase calculadora.
          * Posee 4 operadores +, -, /, *. Trabaja con dos valrores.
          */
-
         /* ATRIBUTOS */
         /* float valorA, valorB */
         /* string operador */
@@ -44,7 +43,6 @@
             $this->operador = $ope;
         }
         
-
         public function resultado(){
             /***
              * Retorna un float con el valor de la operacion de los atributos valorA y valorB.
