@@ -106,36 +106,36 @@
         }
 
         /*Funciones incrementarAtributo() modifican el atributo en uno mas; en los casos de la condiciones debe hacer dos acciones; resetear el atributo e incrementar el atributo siguiente */
-        public function incremetarAnio(){
+        public function incrementarAnio(){
             $this->setAnio($this->getAnio() + 1);
         }
 
-        public function incremetarMes(){
+        public function incrementarMes(){
             if ($this->getMes() == 12){
-                $this->incremetarAnio();
+                $this->incrementarAnio();
                 $this->setMes(1);
             } else {
                 $this->setMes($this->getMes() + 1);
             }
         }
 
-        public function incremetarDia(){
+        public function incrementarDia(){
             if ($this->getDia() == $this->ultimoDiaMes()){
-                $this->incremetarMes();
+                $this->incrementarMes();
                 $this->setDia(1);                
             } else{
                 $this->setDia($this->getDia() + 1);
             }
         }
 
-        public function incremetoDias ($d, $objFecha){
+        public function incremetoDias ($d){
             /*Retorna una fecha nueva dependiendo de la fecha ingresada y los dias sumados */
             /*int d */
-            /*Fecha objFecha, objNewFecha */
+            /*Fecha objNewFecha */
 
-            $objNewFecha = $objFecha;
+            $objNewFecha = new Fecha($this->getDia(),$this->getMes(),$this->getAnio());
             for ($i=0; $i<$d; $i++){
-                $objNewFecha->incremetarDia();
+                $objNewFecha->incrementarDia();
             }
             return $objNewFecha;
         }
@@ -166,9 +166,6 @@
         {
             return $this->getDia()."/".$this->getMes()."/".$this->getAnio();
         }
-
-
-
     }
 
 
