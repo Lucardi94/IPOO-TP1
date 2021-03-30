@@ -4,7 +4,14 @@
          * Respresentacion de la clase Login.
          * Con atributos: nombre del usuario, contraseña actual, frase para recordar contraseña, las ultimas 4 contraseñas.
          * Funciones:
-         *  
+         *   - ingreso
+         *      + validarContrasenia
+         *      + validarUsuario
+         *      + intentosContrasenia
+         *   - cambiarContrasenia
+         *      + cambiarListaContrasenia - set.lista Contraseña()
+         *      + cambiarFrase - set.frase()
+         *      + set.contrasenia()
          */
 
         private $nombreUsuario;
